@@ -1,0 +1,19 @@
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    .landing-left {
+        width: 50%;
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .landing-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
