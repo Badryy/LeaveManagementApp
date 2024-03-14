@@ -1,0 +1,43 @@
+<div class="sidebar-container">
+  <div class="logo-container">
+    <a routerLink="/">
+      <img src="path_to_your_logo_image" alt="Ietech logo" />
+    </a>
+  </div>
+
+  <div class="menu">
+    <header>MENU</header>
+    <ul>
+      <li>
+        <a routerLink="/" [class.active]="currentRoute === '/'">
+          <!-- <img src="path_to_your_overview_icon" alt="overview icon" /> -->
+          Overview
+        </a>
+      </li>
+      <li>
+        <a routerLink="/calender" [class.active]="currentRoute === '/manage-users'">
+          <!-- <img src="path_to_your_manage_users_icon" alt="manage users icon" /> -->
+          Calendar
+        </a>
+      </li>
+      <li>
+        <a routerLink="/leaves" [class.active]="currentRoute === '/manage-roles'">
+          <!-- <img src="path_to_your_manage_roles_icon" alt="manage roles icon" /> -->
+          Leaves List
+        </a>
+      </li>
+      <li>
+        <a routerLink="/requests" [class.active]="currentRoute === '/manage-requests'">
+          <!-- <img src="path_to_your_manage_requests_icon" alt="manage requests icon" /> -->
+          Requests
+        </a>
+      </li>
+      <li>
+        <a routerLink="/settings" [class.active]="currentRoute === '/settings'">
+          <!-- <img src="path_to_your_settings_icon" alt="settings icon" /> -->
+          Settings
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
