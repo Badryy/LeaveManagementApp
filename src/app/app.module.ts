@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { DefaultLayoutComponent } from './default-layout/default-layout.component';
+import { LeavesComponent } from './leaves/leaves.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DefaultLayoutComponent } from './default-layout/default-layout.componen
     SidebarComponent,
     HeaderComponent,
     DefaultLayoutComponent,
+    LeavesComponent,
   ],
   imports: [
     BrowserModule,
