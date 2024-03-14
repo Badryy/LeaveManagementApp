@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { DefaultLayoutComponent } from './default-layout/default-layout.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     DashboardComponent,
     SidebarComponent,
-    HeaderComponent
+    HeaderComponent,
+    DefaultLayoutComponent,
   ],
   imports: [
     BrowserModule,

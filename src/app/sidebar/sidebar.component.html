@@ -1,38 +1,39 @@
-<div class="sidebar-container">
+<div class="sidebar-container" [ngClass]="{'show': showSidebar}">
+  <button class="close-button" (click)="toggleSidebar()">X</button>
   <div class="logo-container">
     <a routerLink="/">
-      <img src="path_to_your_logo_image" alt="Ietech logo" />
+      <img src="assets/logo.png" alt="Ietech logo" />
     </a>
   </div>
 
   <div class="menu">
     <header>MENU</header>
     <ul>
-      <li>
+      <li (click)="toggleSidebar()">
         <a routerLink="/" [class.active]="currentRoute === '/'">
           <!-- <img src="path_to_your_overview_icon" alt="overview icon" /> -->
-          Overview
+          Dashboard
         </a>
       </li>
-      <li>
-        <a routerLink="/calender" [class.active]="currentRoute === '/manage-users'">
-          <!-- <img src="path_to_your_manage_users_icon" alt="manage users icon" /> -->
-          Calendar
-        </a>
-      </li>
-      <li>
-        <a routerLink="/leaves" [class.active]="currentRoute === '/manage-roles'">
+      <li (click)="toggleSidebar()">
+        <a routerLink="/leaves" [class.active]="currentRoute === '/leaves'">
           <!-- <img src="path_to_your_manage_roles_icon" alt="manage roles icon" /> -->
           Leaves List
         </a>
       </li>
-      <li>
-        <a routerLink="/requests" [class.active]="currentRoute === '/manage-requests'">
+      <li (click)="toggleSidebar()">
+        <a routerLink="/requests" [class.active]="currentRoute === '/requests'">
           <!-- <img src="path_to_your_manage_requests_icon" alt="manage requests icon" /> -->
           Requests
         </a>
       </li>
-      <li>
+      <li (click)="toggleSidebar()">
+        <a routerLink="/calender" [class.active]="currentRoute === '/calender'">
+          <!-- <img src="path_to_your_manage_users_icon" alt="manage users icon" /> -->
+          Calendar
+        </a>
+      </li>
+      <li (click)="toggleSidebar()">
         <a routerLink="/settings" [class.active]="currentRoute === '/settings'">
           <!-- <img src="path_to_your_settings_icon" alt="settings icon" /> -->
           Settings
@@ -40,4 +41,8 @@
       </li>
     </ul>
   </div>
+</div>
+
+<div class="hamburger-menu" (click)="toggleSidebar()">
+  <div class="hamburger-icon">&#9776;</div>
 </div>
