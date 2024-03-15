@@ -19,3 +19,120 @@
     padding: 20px;
   }
 }
+
+
+
+
+/* Font */
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Black.otf);
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-BlackItalic.otf);
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Bold.otf);
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-BoldItalic.otf);
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Extrabold.otf);
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-ExtraboldItalic.otf);
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Extrathin.otf);
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-ExtrathinItalic.otf);
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Light.otf);
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-LightItalic.otf);
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Regular.otf);
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-RegularItalic.otf);
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Semibold.otf);
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-SemiboldItalic.otf);
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-Thin.otf) format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Averta CY';
+	src: url(./assets/fonts/averta/AvertaCY-ThinItalic.otf);
+	font-weight: 100;
+	font-style: italic;
+}
