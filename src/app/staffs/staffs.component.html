@@ -1,0 +1,36 @@
+<div class="content">
+  <div class="top">
+    <div></div>
+    <button type="button">Add New Staff</button>
+  </div>
+
+  <table #dataTable class="display">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Staff Id</th>
+        <th>Name</th>
+        <th>Email Address</th>
+        <th>Department</th>
+        <th>Date Of Birth</th>
+        <th>Gender</th>
+        <th>Action</th>
+        <!-- <th>Actions</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let leave of leaves">
+        <td>{{ leave.id }}</td>
+        <td>{{ leave.staffId }}</td>
+        <td>{{ leave.name }}</td>
+        <td>{{ leave.email }}</td>
+        <td>{{ leave.dept }}</td>
+        <td>{{ leave.dob }}</td>
+        <td>{{ leave.gender }}</td>
+        <td><button class="view">view</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

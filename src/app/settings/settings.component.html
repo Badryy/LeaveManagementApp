@@ -1,0 +1,15 @@
+<!-- manage-users-layout.component.html -->
+<div class="tabs">
+  <div class="tab" [ngClass]="{ 'active': selectedTab === 'staffs' }" (click)="selectTab('staffs')">Staffs Information
+  </div>
+  <div class="tab" [ngClass]="{ 'active': selectedTab === 'leaves-type' }" (click)="selectTab('leaves-type')">Leaves
+    Type</div>
+  <div class="tab" [ngClass]="{ 'active': selectedTab === 'company-information' }"
+    (click)="selectTab('company-information')">Company Information</div>
+</div>
+
+<div class="tab-content">
+  <app-staffs *ngIf="selectedTab === 'staffs'"></app-staffs>
+  <app-leaves-type *ngIf="selectedTab === 'leaves-type'"></app-leaves-type>
+  <app-company-information *ngIf="selectedTab === 'company-information'"></app-company-information>
+</div>

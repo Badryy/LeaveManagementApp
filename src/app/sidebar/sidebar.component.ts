@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { MenuService } from './menu.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,17 +8,23 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  currentRoute: string ='';
+  currentRoute: string = '';
   showSidebar: boolean = false;
+  menuItems: any[] = [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private menuService: MenuService) { }
 
   ngOnInit() {
-    this.currentRoute = this.router.url; 
+    this.currentRoute = this.router.url;
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.currentRoute = event.url;
       }
+    });
+
+    const userRole = 'employee';
+    this.menuService.getMenuItems(userRole).subscribe(menuItems => {
+      this.menuItems = menuItems;
     });
   }
 

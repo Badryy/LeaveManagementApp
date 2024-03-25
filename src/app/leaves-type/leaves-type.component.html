@@ -1,0 +1,28 @@
+<div class="content">
+  <div class="top">
+    <div></div>
+    <button type="button">Add New Type</button>
+  </div>
+
+  <table #dataTable class="display">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Leave Type</th>
+        <th>Duration (Working Days)</th>
+        <th>Action</th>
+        <!-- <th>Actions</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let leave of leaves">
+        <td>{{ leave.id }}</td>
+        <td>{{ leave.type }}</td>
+        <td>{{ leave.duration }}</td>
+        <td><button class="view">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

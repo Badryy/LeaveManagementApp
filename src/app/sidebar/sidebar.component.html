@@ -9,34 +9,9 @@
   <div class="menu">
     <header>MENU</header>
     <ul>
-      <li (click)="toggleSidebar()">
-        <a routerLink="/dashboard" [class.active]="currentRoute === '/dashboard'">
-          <!-- <img src="path_to_your_overview_icon" alt="overview icon" /> -->
-          Dashboard
-        </a>
-      </li>
-      <li (click)="toggleSidebar()">
-        <a routerLink="/leaves" [class.active]="currentRoute === '/leaves'">
-          <!-- <img src="path_to_your_manage_roles_icon" alt="manage roles icon" /> -->
-          Leaves List
-        </a>
-      </li>
-      <li (click)="toggleSidebar()">
-        <a routerLink="/requests" [class.active]="currentRoute === '/requests'">
-          <!-- <img src="path_to_your_manage_requests_icon" alt="manage requests icon" /> -->
-          Requests
-        </a>
-      </li>
-      <li (click)="toggleSidebar()">
-        <a routerLink="/calender" [class.active]="currentRoute === '/calender'">
-          <!-- <img src="path_to_your_manage_users_icon" alt="manage users icon" /> -->
-          Calendar
-        </a>
-      </li>
-      <li (click)="toggleSidebar()">
-        <a routerLink="/settings" [class.active]="currentRoute === '/settings'">
-          <!-- <img src="path_to_your_settings_icon" alt="settings icon" /> -->
-          Settings
+      <li *ngFor="let menuItem of menuItems" (click)="toggleSidebar()">
+        <a [routerLink]="menuItem.link" [class.active]="currentRoute === menuItem.link">
+          {{ menuItem.label }}
         </a>
       </li>
     </ul>

@@ -1,0 +1,30 @@
+/* manage-users-layout.component.css */
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #EDF0F5;
+  border-top: 2px solid #EDF0F5;
+  position: sticky;
+  top: 0;
+  overflow-x: scroll;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.tab {
+  padding: 20px 100px;
+  cursor: pointer;
+
+  @media (max-width: 1296px) {
+    padding: 20px 40px;
+    text-align: center;
+  }
+}
+
+.tab.active {
+  color: #03A9F4;
+  border-bottom: 2px solid #03A9F4;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
