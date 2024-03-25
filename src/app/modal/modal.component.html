@@ -1,0 +1,15 @@
+<div class="modal" *ngIf="visible">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>{{ title }}</h2>
+      <button class="close-btn" (click)="closeModal()">X</button>
+    </div>
+    <div class="modal-body">
+      <ng-content></ng-content>
+    </div>
+    <div class="modal-footer">
+      <button (click)="confirm()">Confirm</button>
+      <button (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>

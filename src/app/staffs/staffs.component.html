@@ -27,10 +27,15 @@
         <td>{{ leave.dept }}</td>
         <td>{{ leave.dob }}</td>
         <td>{{ leave.gender }}</td>
-        <td><button class="view">view</button></td>
+        <td><button class="view" (click)="openModal()">view</button></td>
+
       </tr>
     </tbody>
   </table>
 
 
 </div>
+
+<app-modal [visible]="showModal" [title]="modalTitle" (confirmed)="onConfirm()" (canceled)="onCancel()">
+  <!-- Content for the modal -->
+</app-modal>

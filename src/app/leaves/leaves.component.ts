@@ -1,7 +1,4 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import * as  $ from "jquery"
-import "datatables.net"
-
 
 @Component({
   selector: 'app-leaves',

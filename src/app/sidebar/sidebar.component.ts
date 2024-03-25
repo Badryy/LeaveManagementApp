@@ -22,7 +22,7 @@ export class SidebarComponent implements OnInit {
       }
     });
 
-    const userRole = 'employee';
+    const userRole = 'admin';
     this.menuService.getMenuItems(userRole).subscribe(menuItems => {
       this.menuItems = menuItems;
     });

@@ -22,6 +22,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { StaffsComponent } from './staffs/staffs.component';
 import { LeavesTypeComponent } from './leaves-type/leaves-type.component';
 import { CompanyInformationComponent } from './company-information/company-information.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { CompanyInformationComponent } from './company-information/company-infor
     StaffsComponent,
     LeavesTypeComponent,
     CompanyInformationComponent,
+    ModalComponent,
   ], 
   imports: [
     BrowserModule,
