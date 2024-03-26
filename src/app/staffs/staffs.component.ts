@@ -8,21 +8,22 @@ import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 export class StaffsComponent implements AfterViewInit {
   @ViewChild('dataTable', { static: false }) table: ElementRef | undefined;
   showModal: boolean = false;
-  modalTitle: string = 'Modal Title';
+  modalTitle: string = 'Staff Information';
 
   openModal() {
     this.showModal = true;
   }
 
   onConfirm() {
+    this.showModal = false;
     console.log('Modal confirmed');
-    // Perform any action when the modal is confirmed
   }
 
   onCancel() {
+    this.showModal = false;
     console.log('Modal canceled');
-    // Perform any action when the modal is canceled
   }
+
 
   leaves: any[] = [
     { id: 1, staffId: 'IETECH/01/21', name: 'Badru Awwal', email: 'awwal.badru@ietech.com', dept: 'Development', dob: '2024-03-01', gender: 'Male' },

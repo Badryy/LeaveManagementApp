@@ -1,0 +1,82 @@
+.content {
+  margin-top: 20px;
+  width: 100%;
+  height: 550px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px 35px;
+  padding-top: 30px;
+
+  @media (max-width: 576px) {
+    height: 100%;
+    padding: 20px;
+  }
+}
+
+form {
+  margin-top: 40px;
+
+  label {
+    font-size: 13px;
+    color: #757575;
+  }
+
+  @media (max-width: 576px) {
+    .comment {
+      margin-top: 15px;
+    }
+  }
+
+  p,
+  textarea {
+    width: 100%;
+    margin: 10px 0 15px 0;
+    padding: 12px 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+
+    @media (max-width: 576px) {
+      margin: 10px auto;
+      margin-bottom: 0;
+    }
+
+    &:focus {
+      outline: 1px solid #03A9F4;
+    }
+  }
+
+  .days {
+    width: 50px;
+  }
+
+  textarea {
+    width: 92%;
+    height: 120px;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #03A9F4;
+    color: #fff;
+    border: #03A9F4 solid;
+    border-radius: 20px;
+    cursor: pointer;
+
+  }
+
+  .date-fields {
+    display: flex;
+    gap: 15px;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+  }
+
+}

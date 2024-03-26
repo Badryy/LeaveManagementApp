@@ -1,4 +1,4 @@
-<div class="modal" *ngIf="visible">
+<!-- <div class="modal" *ngIf="visible">
   <div class="modal-content">
     <div class="modal-header">
       <h2>{{ title }}</h2>
@@ -10,6 +10,21 @@
     <div class="modal-footer">
       <button (click)="confirm()">Confirm</button>
       <button (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="overlay" *ngIf="visible">
+  <div class="main">
+    <div class="wrapper">
+      <div class="title">
+        {{ title }}
+        <button (click)="cancel()">
+          <img src="assets/close.svg" alt="Close" />
+        </button>
+      </div>
+      <ng-content></ng-content>
     </div>
   </div>
 </div>

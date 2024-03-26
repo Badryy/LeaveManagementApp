@@ -1,14 +1,30 @@
-import { Component,AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import * as  $ from "jquery"
 import "datatables.net"
 
 @Component({
   selector: 'app-requests',
-  templateUrl: './requests.component.html', 
+  templateUrl: './requests.component.html',
   styleUrls: ['./requests.component.css']
 })
-export class RequestsComponent implements AfterViewInit{
+export class RequestsComponent implements AfterViewInit {
   @ViewChild('dataTable', { static: false }) table: ElementRef | undefined;
+  showModal: boolean = false;
+  modalTitle: string = 'Leave Request';
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  onConfirm() {
+    this.showModal = false;
+    console.log('Modal confirmed');
+  }
+
+  onCancel() {
+    this.showModal = false;
+    console.log('Modal canceled');
+  }
 
   leaves: any[] = [
     { id: 1, name: 'Badru Awwal', type: 'Casual Leave', startDate: '2024-03-01', endDate: '2024-03-05', status: 'Approved' },
@@ -45,18 +61,17 @@ export class RequestsComponent implements AfterViewInit{
 
         pageLength: 10,
         lengthMenu: [10, 25, 50, 100],
-        data: this.leaves,
-        columns: [
-          { data: "id" },
-          { data: "name" },
-          { data: "type" },
-          { data: "startDate" },
-          { data: "endDate" },
-          { data: "status" },
-        ]
+        // data: this.leaves,
+        // columns: [
+        //   { data: "id" },
+        //   { data: "name" },
+        //   { data: "type" },
+        //   { data: "startDate" },
+        //   { data: "endDate" },
+        //   { data: "status" }, 
+        // ]
 
       });
     }
   }
 }
- 
